@@ -45,10 +45,12 @@
             background-color: rgb(199, 199, 32);
 
         }
+
     </style>
     <script src="main_page.js"></script>
 </head>
 <body>
+    <div class = "output_window" id ="O_W">1</div>
     <Div class = "Button_Spot">
         <button class ="Increment_button" type="button">NEXT</button>
     </Div>
@@ -62,12 +64,12 @@
             else if (Output_Value%3==0)                        {Actual_Output = "Fizz"; }
             else if  (Output_Value%5==0)                        {Actual_Output = "Buzz"; }
             else                                               {Actual_Output = Output_Value.toString();};
-            document.getElementById('0_W').innerHTML = Actual_Output;
+            document.getElementById("O_W").innerHTML = Actual_Output;
             return Output_Value;}
 
             
         
     </script>
-    <div class = "output_window">Fizz</div>
+  
 </body>
 </html>
