@@ -52,11 +52,11 @@
 <body>
     <div class = "output_window" id ="O_W">1</div>
     <Div class = "Button_Spot">
-        <button class ="Increment_button" type="button">NEXT</button>
+        <button class ="Increment_button" type="button" onclick="Output_Value  = Change_Output(Output_Value)">NEXT</button>
     </Div>
     <script type ="text/javascript">
         var  Output_Value = 1;
-        function Output_Value(Output_Value) {
+        function Change_Output(Output_Value) {
             
             Output_Value = Output_Value + 1;
             var Actual_Output  = "Fizz"
