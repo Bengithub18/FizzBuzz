@@ -10,8 +10,24 @@
 </head>
 <body>
     <Div class = "Button_Spot">
-        <button class ="Increment_button" type="button">CLICK</button>
+        <button class ="Increment_button" type="button">NEXT</button>
     </Div>
+    <script type ="text/javascript">
+        var  Output_Value = 1;
+        function Output_Value(Output_Value) {
+            
+            Output_Value = Output_Value + 1;
+            var Actual_Output  = "Fizz"
+            if ((Output_Value%3==0) && (Output_Value%5==0)) {Actual_Output = "FizzBuzz"; }
+            else if (Output_Value%3==0)                        {Actual_Output = "Fizz"; }
+            else if  (Output_Value%5==0)                        {Actual_Output = "Buzz"; }
+            else                                               {Actual_Output = Output_Value.toString();};
+            document.getElementById('0_W').innerHTML = Actual_Output;
+            return Output_Value;}
+
+            
+        
+    </script>
     <div class = "output_window">Fizz</div>
 </body>
 </html>
