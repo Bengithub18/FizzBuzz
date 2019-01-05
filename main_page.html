@@ -186,25 +186,59 @@
 			<button class="FB_Button" type="button" onclick="Output_Value = Change_Output(4)" id = "FB_B"> FIZZBUZZ!! </button>
 	
 		</div>
+		
+	<button class="Reset" type="button" onclick="Reset_Game()" id="R_B" "> RESET </button>
 
-		<div class = "output_window" id ="O_W">1</div>
-    <Div class = "Button_Spot">
-        <button class ="Increment_button" type="button" onclick="Output_Value  = Change_Output(Output_Value)">NEXT</button>
-    </Div>
-    <script type ="text/javascript">
-        var  Output_Value = 1;
-        function Change_Output(Output_Value) {
-            
-            Output_Value = Output_Value + 1;
-            var Actual_Output  = "Fizz"
-            if ((Output_Value%3==0) && (Output_Value%5==0)) {Actual_Output = "FizzBuzz"; }
-            else if (Output_Value%3==0)                        {Actual_Output = "Fizz"; }
-            else if  (Output_Value%5==0)                        {Actual_Output = "Buzz"; }
-            else                                               {Actual_Output = Output_Value.toString();};
-            document.getElementById("O_W").innerHTML = Actual_Output;
-            return Output_Value;}
+	<script type="text/javascript">
+		var Output_Value = 1;
+		var Score = Output_Value-1;
+		var High_Score = 0;
 
-            
+		function Change_Output(Guess){
+			Output_Value = Output_Value + 1;
+			
+			var Actual_Output = "Fizz"
+
+			if ((Output_Value%3==0) && (Output_Value%5==0)) {Actual_Output = "FizzBuzz";}
+			else if (Output_Value%3==0) 					{Actual_Output = "Fizz";} 
+				else if (Output_Value%5==0)					{Actual_Output = "Buzz";}
+					else 									{ Actual_Output = Output_Value.toString();};
+
+			if  ( ( (Guess == 4) && (Actual_Output =="FizzBuzz") ) 	||
+				  ( (Guess == 3) && (Actual_Output =="Buzz") )     	||
+				  ( (Guess == 2) && (Actual_Output =="Fizz") )		||
+				  ( (Guess == 1) && (Actual_Output == Output_Value.toString()) ) )
+				  {
+					document.getElementById('O_W').innerHTML = Actual_Output;
+					document.getElementById('O_W').style.color = '#000000';  	
+				  }
+			else
+			{
+				document.getElementById('O_W').innerHTML = 'WRONG!';
+				document.getElementById('O_W').style.color = '#b30000';
+				
+				document.getElementById('Buttons').style.visibility = 'hidden';
+			}
+
+			Score = Output_Value - 1;
+			if (High_Score < Score) {
+				High_Score = Score;
+			}
+				
+			document.getElementById('Score_Id').innerHTML = Score.toString();
+			document.getElementById('HighScore_Id').innerHTML = High_Score.toString();
+			return Output_Value;
+		}
+		function Reset_Game() {
+			Score = 0;
+			Output_Value = 0;
+			document.getElementById('Buttons').style.visibility = 'visible';
+			Change_Output(Output_Value+1);
+		}
+		function User_Login() {
+			// body...
+		}
+
         
     </script>
   

@@ -7,7 +7,7 @@ var server = app.listen(8080, function () {
 	var port = server.address().port;
 
 	app.get('/', function (req, res) {
-		res.sendFile( __dirname + "/" + "Login_Page.html" );
+		res.sendFile( __dirname + "/" + "login_page.html" );
 	})
 
 	app.get('/Login', function (req, res) {
@@ -22,17 +22,17 @@ var server = app.listen(8080, function () {
 		Correct_name = "ben";
 		Correct_pass = "fizzbuzz"
         if ((Login_Name==Correct_name) && (Pass_Name==Correct_pass)) {
-			res.sendFile( __dirname + "/" + "Main_Page.html" );
+			res.sendFile( __dirname + "/" + "main_page.html" );
 		}
 		else {
-			res.sendFile( __dirname + "/" + "Login_Page.html" );
+			res.sendFile( __dirname + "/" + "login_page.html" );
 		}
 		
 
 	})
 
 	app.post('/Guest', function (req, res) {
-		res.sendFile( __dirname + "/" + "Main_Page.html" );
+		res.sendFile( __dirname + "/" + "main_page.html" );
 
 	})
 
