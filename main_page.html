@@ -134,8 +134,6 @@
 			font-weight: bold;
 			font-size: 100%;
 		}
-
-
 		.Reset {
 			position: absolute;
 			left: 45%;
@@ -152,7 +150,44 @@
     <script src="main_page.js"></script>
 </head>
 <body>
-    <div class = "output_window" id ="O_W">1</div>
+
+		<div class="Title"> FIZZ-BUZZ GAME </div>
+
+		<div class="Instructions"> 
+			The number start from 1 and goes 2, 3, 4 ....... Follows the rules below.<br><br>
+	
+			Guess what should be displayed next correctly to add 1 to your current score. <br><br>
+	
+			If your guess is WRONG!, You Lose. <br><br>
+			
+			Rules:<br>
+			1. Choose "FIZZ" if next number is divisible by 3 			<br>
+			2. Choose "BUZZ" if next number is divisible by 5 			<br>
+			3. Choose "FIZZBUZZ" if next number is divisible by both	<br>
+			4. Choose "NUMBER" for everything else. 					<br>
+		<div>
+			<!-- Score Displays -->
+	    <div class="Score_Styling"> Current Score: </div>
+	    <div class="Score_Display" id="Score_Id"> 0 </div>
+	    <div class="HighScore_Styling"> Highest Score: </div>
+	    <div class="HighScore_Display" id="HighScore_Id"> 0 </div>
+
+	     <div class="Output_Window" id="O_W"> 
+			 1
+		 
+		<div>
+
+			<!-- Player play buttons -->
+	    <div class="Button_Spot" id="Buttons">
+
+			<button class="N_Button" type="button" onclick="Output_Value = Change_Output(1)" id ="N_B" "> NUMBER </button>
+			<button class="F_Button" type="button" onclick="Output_Value = Change_Output(2)" id ="F_B" "> FIZZ! </button>
+			<button class="B_Button" type="button" onclick="Output_Value = Change_Output(3)" id ="B_B"> BUZZ! </button>
+			<button class="FB_Button" type="button" onclick="Output_Value = Change_Output(4)" id = "FB_B"> FIZZBUZZ!! </button>
+	
+		</div>
+
+		<div class = "output_window" id ="O_W">1</div>
     <Div class = "Button_Spot">
         <button class ="Increment_button" type="button" onclick="Output_Value  = Change_Output(Output_Value)">NEXT</button>
     </Div>
