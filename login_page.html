@@ -15,15 +15,15 @@
 			width: 20%;
 			height: 5%;
 			font-family: ARIAL;
-			font-size: 60%;
+			font-size: 80%;
 		}
 
 		.Guest_Button {
 
 			width: 100%;
-			height: 100%;
+			height: 80%;
 			font-family: ARIAL;
-			font-size: 60%;
+			font-size: 100%;
 		}
 
 		.Title {
@@ -42,17 +42,6 @@
 		.Username_Label {
 			position: absolute;
 			top: 35%;
-			left: 35%;
-			width: 10%;
-			height: 10%;
-			font-family: ARIAL;
-			font-weight: bold;
-			font-style: italic;
-			font-size: 100%;
-		}
-		.Password_Label {
-			position: absolute;
-			top: 40%;
 			left: 35%;
 			width: 10%;
 			height: 10%;
@@ -82,17 +71,7 @@
 			font-style: italic;
 			font-size: 60%;
 		}
-
-		.Pass_Spot {
-			position: absolute;
-			top: 40%;
-			left: 43%;
-			width: 12%;
-			height: 2%;
-			font-family: ARIAL;
-			font-style: italic;
-			font-size: 60%;
-		}
+		
 
 		.Message_Board {
 			position: absolute;
@@ -113,7 +92,6 @@
 
 	<div class="User_Data">
 		<div class="Username_Label"> Username:</div>
-		<div class="Password_Label"> Password:</div>
 		
 	</div>
 
@@ -121,7 +99,6 @@
 		
 		<form class="Input_Spot">
 			<input class = "UName_Spot" type="text" name="u_name" value="Enter Here"> <br>
-			<input class = "Pass_Spot" type="text" name="p_word" value="Enter Here">
 			<button class="Login_Button" type="submit" formaction="/Login"> Login </button>
 		</form>
 
@@ -129,9 +106,10 @@
 			<button class="Guest_Button" type="submit"> Play As A Guest </button>
 		</form>
 
-		<div class="Message_Board"> Please enter correct username and passoword<br> 
+		<div class="Message_Board"> Please enter correct username <br> 
 									to record highest score for individual. <br><br>
-									Or Play as a Guest</div>
+                                    Or Play as a Guest
+        </div>
 	</div>
 
 </body>
