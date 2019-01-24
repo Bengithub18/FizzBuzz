@@ -1,0 +1,14 @@
+.Display {
+	position: absolute;
+	left: 20%;
+	top: 30%;
+	width: 60%;
+	height: 30%;
+
+	color: #006600;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 800%;
+	text-align: center;
+}

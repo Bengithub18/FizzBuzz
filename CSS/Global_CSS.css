@@ -1,0 +1,31 @@
+body{
+	background-color: beige;
+}
+
+h1 {
+	position: absolute;
+	left: 25%;
+	top: 5%;
+	width: 50%;
+	height: 5%;
+	font-family: TIMES;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 300%;
+	text-align: center;
+}
+
+.The_Button {
+	position: absolute;
+	left: 40%;
+	top: 70%;
+	width: 20.5%;
+	height: 7.5%;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 100%;
+	text-align: center;
+
+}
+

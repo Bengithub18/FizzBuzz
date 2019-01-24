@@ -1,0 +1,33 @@
+.Label{
+	position: absolute;
+	left: 40%;
+	top: 42%;
+	width: 20%;
+	height: 7.5%;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 150%;
+	text-align: center;
+}
+.Username {
+	position: absolute;
+	left: 40%;
+	top: 50%;
+	width: 20%;
+	height: 7.5%;
+	font-family: Arial;
+	font-size: 100%;
+	text-align: left;
+}
+
+.MessageBox {
+	position: absolute;
+	left: 35%;
+	top: 30%;
+	width: 30%;
+	height: 10%;
+	font-family: Arial;
+	font-size: 60%;
+	text-align: center;
+}

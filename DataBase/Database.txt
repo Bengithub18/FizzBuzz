@@ -1,0 +1,14 @@
+{"name" : "admin"
+ "score" : 0}
+
+ {"name" : "Ben"
+ "score" : 0}
+
+ {"name" : "John"
+ "score" : 0}
+
+ {"name" : "Mark"
+ "score" : 0}
+
+ {"name" : "Burger"
+ "score" : 0}
