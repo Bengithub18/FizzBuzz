@@ -11,7 +11,7 @@ The given folder contains code to run a web application of two pages on a server
 
 ---------------------- Program Run Instructions----------------------------
 
-Step 1: Verify the current folder on Terminal to be ./FizzBuzz_Counter
+Step 1: Verify the current folder on Terminal to be ./FizzBuzz
 
 Step 2: Run Server_Setup.js
 $ node Server_Setup.js
