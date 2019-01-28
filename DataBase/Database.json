@@ -1,12 +1,1 @@
-{
-    "Users":[ 
-        {"name":"admin","score":35},
-        {"name":"Ben","score":81},
-        {"name":"John","score":11},
-        {"name":"Mark","score":76},
-        {"name":"Burger","score":14},
-        {"name":"George","score":5},
-        {"name":"Gray","score":17}
-        
-    ]
-}
+{"Users":[{"name":"admin","score":35},{"name":"Ben","score":81},{"name":"John","score":11},{"name":"Mark","score":76},{"name":"Burger","score":14},{"name":"George","score":5},{"name":"Gray","score":17}]}
